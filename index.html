@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63923197-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-63923197-3');
+    </script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-1140465960826587",
+        enable_page_level_ads: true
+      });
+    </script>
+
+
+    <title>Droog in de kakker</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="titlecontainer">
+        <div id="title">DROOG IN DE KAKKER</div>
+        <div class="picker">
+            <a id="picker_DE" href="#">DE</a>
+            <span> | </span>
+            <a id="picker_EN" href="#">EN</a>
+            <span> | </span>
+            <a id="picker_FR" href="#">FR</a>
+            <span> | </span>
+            <a id="picker_NL" href="#">NL</a>
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+
+(function(){
+    const title = document.getElementById('title');
+    const colors = [
+        '#FF355E',
+        '#FD5B78',
+        '#FF6037',
+        '#FF9966',
+        '#FF9933',
+        '#FFCC33',
+        '#FFFF66',
+        '#CCFF00',
+        '#AAF0D1',
+        '#50BFE6',
+        '#FF6EFF',
+        '#EE34D2',
+        '#FF00CC'
+    ];
+
+    setInterval(function(){
+        title.style.visibility = (title.style.visibility == 'hidden' ? '' : 'hidden');
+        const random_color = colors[Math.floor(Math.random() * colors.length)];
+        title.style.color = random_color;
+    }, 50);
+
+})();
+
+const DE = document.getElementById('picker_DE');
+const EN = document.getElementById('picker_EN');
+const FR = document.getElementById('picker_FR');
+const NL = document.getElementById('picker_NL');
+const inner_DE = "TROCKEN IM ROSETTE";
+const inner_EN = "DRY IN THE CHOCOLATE STARFISH";
+const inner_FR = "SEC DANS LE TROU DE BALLE";
+const inner_NL = "DROOG IN DE KAKKER";
+
+DE.addEventListener('click', function(){
+    title.innerHTML = inner_DE;
+});
+
+EN.addEventListener('click', function(){
+    title.innerHTML = inner_EN;
+});
+
+FR.addEventListener('click', function(){
+    title.innerHTML = inner_FR;
+});
+
+NL.addEventListener('click', function(){
+    title.innerHTML = inner_NL;
+});
+
+
+</script>
+
+</html>

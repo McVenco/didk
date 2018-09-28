@@ -1,0 +1,28 @@
+body {
+    background-image: url("doemaarbloeden.gif");
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.titlecontainer {
+    background-color: #66FF66;
+}
+
+#title {
+    font-size: 80px;
+    /* color: #FF00CC; */
+    text-align: center;
+    margin-top: 140px;
+    padding: 40px;
+}
+
+.picker {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.picker a {
+    color: #000;
+    text-decoration: none;
+}
